@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
@@ -183,11 +184,11 @@ public class Main {
 
 
 
-Scanner sc=new Scanner(System.in);
-System.out.println("请输入一个数字");
+// Scanner sc=new Scanner(System.in);
+// System.out.println("请输入一个数字");
 // String num=sc.next();
 // char [] arr=num.toCharArray();
-int num=sc.nextInt();
+// int num=sc.nextInt();
 // int num_arr=arr.length/2;
 // System.out.println("半长为："+num_arr);
 // for(int i=0;i<=num_arr;i++){
@@ -216,17 +217,102 @@ int num=sc.nextInt();
 // }else{
 //     System.out.println("该数字不是回文");
 // }
-System.out.println("请输入被除数：");
-int cs=sc.nextInt();
-sc.close();
-int count=0;
-while(num>cs){
-num=num-cs;
-count++;
-}
-System.out.println("商为："+count);
-System.out.println("余数为："+num);
 
+
+// while循环练习：商和余数
+// System.out.println("请输入被除数：");
+// int cs=sc.nextInt();
+// sc.close();
+// int count=0;
+// while(num>cs){
+// num=num-cs;
+// count++;
+// }
+// System.out.println("商为："+count);
+// System.out.println("余数为："+num);
+
+
+
+// do while 循环
+// 直到满足while里面的条件退出循环
+
+
+// 练习题 逢七过
+
+// for(int i=0;i<=100;i++){
+//     if(i%7==0 || i%10==7 ||i/10%10 == 7){
+//         System.out.print("过  ");
+//         continue;
+//     }
+//     System.out.print(i+"  ");
+// }
+
+// 练习 求平方根
+// Scanner sc=new Scanner(System.in);
+
+// while(true){
+// System.out.println("请输入一个大于等于2的整数");
+// int num=sc.nextInt();
+// if(num>=2){
+// double qrtnum=Math.sqrt(num);
+// int sqrt_num=(int)qrtnum;
+// System.out.println(num+"的平方根为："+sqrt_num);
+// break;
+// }else{
+// System.out.println("输入有误！请输入一个大于2的");
+// }
+// }
+
+
+//练习  求质数
+// Scanner sc =new Scanner(System.in);
+// int num=sc.nextInt();
+// while(true){
+//     System.out.println("请输入一个正整数：");
+//     num=sc.nextInt();
+//     sc.close();
+//     if(num>=2){
+// 			for (int i=2; i<=num; i++) {  //i取2是因为1既不是质数也不是合数
+// 			if (i == num) {
+// 				System.out.println(num + "是质数");
+// 			} else if (num%i == 0) {
+// 				System.out.println(num + "不是质数");
+// 				break;
+// 			}
+		
+//     }  
+//     break; 
+// }else{
+//     System.out.println("请输入一个大于1的整数");
+// }
+// } 
+
+
+// 随机数
+// 第一步  导包  
+// import java.util.Random;
+// 第二步
+// Random r=new Random();
+// 第三步
+// int number=r.nextInt(随机数范围);
+
+
+
+// 练习    生成随机数
+// Random r=new Random();
+// int num=r.nextInt(10);//包左不包右，包头不包尾  即取值范围在：0～9
+// System.out.println(num);
+
+// // 生成任意范围的随机数
+// // 例如生成9～20之间的数字
+// int num01=r.nextInt(12)+9;
+// // 实现原理： 先生成0～11区间的然后统一加一个数，实现任意区间随机数
+// System.out.println("自定义随机数为："+ num01);
+
+
+
+//数组
+// 数组的定义
 
 
 
